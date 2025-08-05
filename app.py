@@ -241,7 +241,7 @@ def main():
         
         with col1:
             st.subheader("📷 Original Image")
-            st.image(image, caption="Original", use_column_width=True)
+            st.image(image, caption="Original", use_container_width=True)
         
         with col2:
             st.subheader("✨ Filtered Image")
@@ -263,7 +263,7 @@ def main():
                 st.image(
                     st.session_state.filtered_image, 
                     caption=f"Filtered ({st.session_state.current_filter})", 
-                    use_column_width=True
+                    use_container_width=True
                 )
                 
                 # Download section
